@@ -1,5 +1,5 @@
-import dragon from "../../assets/dragon.png";
-import banner from "../../assets/scrollingBanner.png";
+import dragon from "../../assets/dragon.webp";
+import banner from "../../assets/scrollingBanner.jpg";
 import RushCover from "../../assets/rush/Fall25RushCover.png";
 import rushChair1 from "../../assets/brothers/active/StevenRoster.png"
 import rushChair2 from "../../assets/brothers/active/JamesRoster.png"
@@ -87,6 +87,7 @@ function Rush() {
                                         src={banner}
                                         alt={`banner ${i}`}
                                         className="h-16 w-auto"
+                                        loading="eager"
                                     />
                                 </li>
                             ))}
@@ -94,7 +95,7 @@ function Rush() {
                     </div>
                 </div>
             </article>
-            <article className="bg-[url(./assets/graintexture.png)]">
+            <article className="bg-[url(./assets/graintexture.webp)]">
                 <svg viewBox="0 0 1440 223"
                      fill="#FFFFFF"
                      xmlns="http://www.w3.org/2000/svg"

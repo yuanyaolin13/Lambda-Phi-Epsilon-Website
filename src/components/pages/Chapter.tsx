@@ -1,5 +1,5 @@
-import dragon from "../../assets/dragon.png";
-import banner from "../../assets/scrollingBanner.png";
+import dragon from "../../assets/dragon.webp";
+import banner from "../../assets/scrollingBanner.jpg";
 import ChapterRosterItem from "../util/ChapterRosterItem.tsx";
 
 
@@ -318,7 +318,7 @@ function Chapter() {
                 'Jordan "λvant-𝄞arde" Shirtz',
             ],
             classMembers: [
-                '#120. Jonathan "1MPER1OSO" Gregory',
+                '#120. Jonathan "1MP3RIOSO" Gregory',
                 '#121. Steven "Ad Astra" Chen',
                 '#122. Yuanyao "Entei" Lin',
             ]
@@ -350,6 +350,7 @@ function Chapter() {
                                         src={banner}
                                         alt={`banner ${i}`}
                                         className="h-16 w-auto"
+                                        loading="eager"
                                     />
                                 </li>
                             ))}
@@ -381,9 +382,9 @@ function Chapter() {
                         authenticity, courageous leadership, cultural heritage, love, and
                         wisdom.
                     </div>
-                    <div className='flex flex-col space-y-4 lg:space-y-0 lg:flex-row justify-between lg:mx-24'>
+                    <div className='flex-col space-y-4 lg:space-y-0 lg:flex-row justify-between lg:mx-24 hidden md:flex'>
                         <div className="tabular-nums  text-blue-700 lg:text-7xl text-3xl font-bold animate-[dollarsRaisedCounter_3s_ease-out_forwards] [counter-set:_num_var(--num)] before:content-[counter(num)]">
-                            <span className='sr-only'>$1,500</span><span className='not-sr-only'>$+</span>
+                            <span className='sr-only'>$2,000</span><span className='not-sr-only'>$+</span>
                             <div className='text-sm lg:text-xl text-black w-full'>raised for other orgs.</div>
                         </div>
                         <div className="tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold animate-[brothersCounter_3s_ease-out_forwards] [counter-set:_num_var(--num)] before:content-[counter(num)]">
@@ -395,10 +396,24 @@ function Chapter() {
                             <div className='text-sm lg:text-xl text-black w-full'>brothers part of the chapter</div>
                         </div>
                     </div>
+                    <div className='flex-col space-y-4 lg:space-y-0 lg:flex-row justify-between lg:mx-24 flex md:hidden'>
+                        <div className="tabular-nums  text-blue-700 lg:text-7xl text-3xl font-bold">
+                            <span>$2,000+</span>
+                            <div className='text-sm lg:text-xl text-black w-full'>raised for other orgs.</div>
+                        </div>
+                        <div className="tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold">
+                            <span>10K+</span>
+                            <div className='text-sm lg:text-xl text-black w-full'>brothers world-wide</div>
+                        </div>
+                        <div className="tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold">
+                            <span>100+</span>
+                            <div className='text-sm lg:text-xl text-black w-full'>brothers part of the chapter</div>
+                        </div>
+                    </div>
                 </div>
             </article>
 
-            <article className='h-full bg-[url(./assets/graintexture.png)]'>
+            <article className='h-full bg-[url(./assets/graintexture.webp)]  bg-fixed bg-bottom'>
                 <svg viewBox="0 0 1440 223"
                      fill="#FFFFFF"
                      xmlns="http://www.w3.org/2000/svg"

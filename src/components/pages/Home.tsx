@@ -1,25 +1,25 @@
-import banner from '../../assets/scrollingBanner.png'
-import lambdaPhoto1 from '../../assets/phiReveal.png'
-import lambdaPhoto2 from '../../assets/lambdaPhoto2.png'
-import backgroundTexture from '../../assets/backgroundtexture.png'
-import contactUsTexture from '../../assets/contactUsTexture.png'
-import dragon from "../../assets/dragon.png";
+import banner from '../../assets/scrollingBanner.jpg'
+import lambdaPhoto1 from '../../assets/phiReveal.webp'
+import lambdaPhoto2 from '../../assets/lambdaPhoto2.webp'
+import backgroundTexture from '../../assets/backgroundtexture.webp'
+import contactUsTexture from '../../assets/contactUsTexture.webp'
+import dragon from "../../assets/dragon.webp";
 
 function Home() {
     return (
         <div className="w-full flex flex-col">
             <article className="bg-[url(./assets/smoke2.png)] h-full bg-cover bg-center bg-no-repeat">
                 <div className="h-full w-full bg-black/75 backdrop-blur-sm text-white flex flex-col justify-center">
-                    <div className="text-center lg:text-left lg:text-lg italic mt-64 lg:mt-48 lg:ml-8">
+                    <div className="text-center lg:text-left lg:text-lg italic mt-64 lg:mt-48 lg:ml-8 tracking-tight">
                         The University of North Carolina at Chapel Hill
                     </div>
-                    <div className="text-center lg:text-left text-6xl lg:text-[12rem] font-extrabold italic lg:-mt-6">
+                    <div className="text-center lg:text-left text-6xl lg:text-[12rem] font-extrabold italic tracking-tighter">
                         LAMBDA PHI
                     </div>
-                    <div className="text-center lg:text-right text-6xl lg:text-[12rem] -mt-3 font-extrabold italic lg:ml-auto lg:-mt-12">
+                    <div className="text-center lg:text-right text-6xl lg:text-[12rem] -mt-3 font-extrabold italic lg:ml-auto lg:-mt-12 tracking-tighter">
                         EPSILON
                     </div>
-                    <div className='ml-auto lg:-mt-4 mr-6 -mt-2 mb-66 lg:mb-50'>est. 2013</div>
+                    <div className='ml-auto lg:-mt-8 mr-6 -mt-2 mb-66 lg:mb-50'>est. 2013</div>
 
                     <div className="w-full overflow-hidden mt-auto bg-white p-2">
                         <img
@@ -34,6 +34,7 @@ function Home() {
                                         src={banner}
                                         alt={`banner ${i}`}
                                         className="h-16 w-auto"
+                                        loading="eager"
                                     />
                                 </li>
                             ))}
@@ -42,7 +43,7 @@ function Home() {
                 </div>
             </article>
             <article className="relative w-full h-full flex bg-white">
-                <div className="flex flex-col lg:flex-row lg:items-start m-6 lg:mx-12 w-full justify-center bg-[url(./assets/whoarewebackgroundtexture.png)] bg-contain">
+                <div className="flex flex-col lg:flex-row lg:items-start m-6 lg:mx-12 w-full justify-center bg-[url(./assets/whoarewebackgroundtexture.webp)] bg-contain">
                     <div className="lg:-rotate-90 lg:mt-64 lg:text-8xl text-5xl font-extrabold text-blue-700 flex flex-col justify-center">
                         <div>
                             WHO ARE
@@ -53,7 +54,7 @@ function Home() {
                     </div>
                     <div className="flex-1 lg:px-24 lg:p-12 relative mt-6 justify-center ">
                         <div className='relative flex justify-center'>
-                            <div className="absolute inset-0 bg-[url(./assets/officialKanji.png)] bg-no-repeat bg-center bg-contain opacity-10"></div>
+                            <div className="absolute inset-0 bg-[url(./assets/officialKanji.webp)] bg-no-repeat bg-center bg-contain opacity-10"></div>
                             <div className="text-gray-800 text-md lg:text-lg">
                                 <span className='font-bold'>Lambda Phi Epsilon</span> at UNC Chapel Hill is an Asian-interest, non-Asian-exclusive fraternity founded in
                                 the Spring of 2013 by 18 young men. We strive to represent the Asian-American community in
@@ -71,16 +72,15 @@ function Home() {
                     </div>
                 </div>
             </article>
-            <article className="bg-[url(./assets/graintexture.png)] relative h-full">
+            <article className="bg-[url(./assets/graintexture.webp)] relative h-full">
                 <div className="relative w-full">
-                    <svg viewBox="0 0 1440 223" fill="none" xmlns="http://www.w3.org/2000/svg" className={'-mb-px'}>
+                    <svg viewBox="0 0 1440 200" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" className={'-mt-px'}>
                         <path
                             d="M-22 0V223L-6.77841 208.411L12.1696 206.029L27.707 197.097L58.1502 200.075H81.6458L103.057 206.238L147.269 190.518L153.585 169.2L186.428 168.724L195.46 146.87L218.009 142.911L221.988 129.93L256.031 126.952L282.811 114.835C293.323 116.23 303.392 118.283 312.749 120.938C323.233 124.511 353.298 123.141 353.298 123.141L369.593 135.05L395.678 143.595L435.09 147.168L477.47 152.795L514.419 145.62L551.368 137.254L592.99 142.375L614.717 139.397L646.297 148.329L656.087 138.266L683.246 140.142L701.373 130.585L719.437 111.828L739.332 114.537L770.154 110.785L792.766 116.681L819.23 115.638L844.494 122.635L891.232 122.308L920.16 129.126L954.582 135.944L1025.51 156.934L1044.02 149.937L1079.13 153.688L1108.82 150.294C1108.82 150.294 1156.25 147.109 1167.43 138.385C1178.61 129.662 1162.38 120.968 1168.19 112.631C1174 104.295 1212.4 100.514 1202.61 84.2874L1249.67 76.3678L1276.45 78.2435L1291.67 68.865L1335.12 75.1769L1358.62 66.245L1406.43 79.0474L1435.04 75.6235L1461.44 92.0284V0H-22Z"
-                            fill="#FFFFFF"
                         />
                     </svg>
                 </div>
-                <div className='flex flex-col lg:mx-64 lg:space-y-20 my-4 px-8 lg:mt-24'>
+                <div className='flex flex-col lg:mx-64 lg:space-y-20 my-4 px-8 lg:mt-12'>
                     <div className='flex flex-col lg:flex-row items-center'>
                         <div className='flex flex-col w-full lg:w-1/2'>
                             <div className='text-4xl lg:text-7xl font-bold pb-4'> VISION </div>
@@ -106,8 +106,15 @@ function Home() {
                     </div>
                 </div>
                 <div className="relative">
-                    <svg viewBox="0 0 1440 658" fill="none" xmlns="http://www.w3.org/2000/svg"  className="block -mb-px">
-                        <path d="M1443 657.273V0.381409L1397.96 55.1293L1349.59 44.8945L1317.01 69.1004L1273.15 88.2703L1259.61 119.381L1238.22 141.8L1191.02 134.327L1167.96 170.148L1133.62 190.699L1097.02 183.226L1040.2 227.901L962.687 215.798L939.039 249.346L903.519 254.463L863.582 232.125L825.412 227.008L812.46 194.435L752.311 160.401L714.533 174.372L680.877 172.504L657.72 122.224L611.602 108.252L559.302 118.975L509.259 78.9291L476.683 70.9687L412.51 81.6908L364.135 115.725L321.354 102.16L273.568 67.7195L225.781 82.1782L190.359 77.5482L175.15 54.2357L149.834 30.9232H125.107L87.9183 16.952L60.9344 33.7662L31.6937 22.5568L0 0.381409V657.273L1443 657.273Z" fill="#FFFFFF"/>
+                    <svg viewBox="0 0 1440 658" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  className="block -mb-px">
+                        <path d="M1443 657.273V0.381409L1397.96 55.1293L1349.59 44.8945L1317.01 69.1004L1273.15
+                        88.2703L1259.61 119.381L1238.22 141.8L1191.02 134.327L1167.96 170.148L1133.62
+                        190.699L1097.02 183.226L1040.2 227.901L962.687 215.798L939.039 249.346L903.519
+                        254.463L863.582 232.125L825.412 227.008L812.46 194.435L752.311 160.401L714.533
+                        174.372L680.877 172.504L657.72 122.224L611.602 108.252L559.302 118.975L509.259
+                        78.9291L476.683 70.9687L412.51 81.6908L364.135 115.725L321.354 102.16L273.568
+                        67.7195L225.781 82.1782L190.359 77.5482L175.15 54.2357L149.834 30.9232H125.107L87.9183
+                        16.952L60.9344 33.7662L31.6937 22.5568L0 0.381409V657.273L1443 657.273Z"/>
                     </svg>
                 </div>
             </article>
@@ -141,6 +148,7 @@ function Home() {
                                         <a
                                             href='https://www.instagram.com/unclambdas/'
                                             target={"_blank"}
+                                            aria-label="UNC Lambdas Instagram Account"
                                             className='z-1000'
                                         >
                                             <svg className="w-10 h-10" fill="currentColor"
@@ -155,6 +163,7 @@ function Home() {
                                         <a
                                             href='https://www.tiktok.com/@unclambdas'
                                             target={"_blank"}
+                                            aria-label="UNC Lambdas TikTok Account"
                                             className='z-1000'
                                         >
                                             <svg
@@ -171,6 +180,7 @@ function Home() {
                                         <a
                                             href='https://www.facebook.com/unclambdas/'
                                             target={"_blank"}
+                                            aria-label="UNC Lambdas Facebook Account"
                                             className='z-1000 text-black'
                                         >
                                             <svg className="w-10 h-10" fill="currentColor"
