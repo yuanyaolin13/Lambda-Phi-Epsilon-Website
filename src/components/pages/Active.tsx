@@ -163,8 +163,8 @@ function Active() {
             image: KhangRoster,
             lineNumber: "#123",
             name: "Khang “Lucky Twice” Nguyen",
-            role: "",
-            contact: "idk@unc.edu",
+            role: "New Member",
+            contact: "khangn@unc.edu",
             year: "2026",
         },
         {
