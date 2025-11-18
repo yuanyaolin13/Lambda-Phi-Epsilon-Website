@@ -19,7 +19,7 @@ import StevenRoster from "../../assets/brothers/active/StevenRoster.jpg";
 import TianyiRoster from "../../assets/brothers/active/TianyiRoster.jpg";
 import YuanyaoRoster from "../../assets/brothers/active/YuanyaoRoster.jpg";
 import KhangRoster from "../../assets/brothers/active/KhangRoster.jpeg"
-import WillRoster from "../../assets/brothers/active/WillRoster.jpg";
+import WillRoster from "../../assets/brothers/active/WillRoster.png";
 import BrianRoster from "../../assets/brothers/active/BrianRoster.jpeg";
 import CharlieRoster from "../../assets/brothers/active/CharlieRoster.jpeg";
 import ChesterRoster from "../../assets/brothers/active/ChesterRoster.jpeg";
