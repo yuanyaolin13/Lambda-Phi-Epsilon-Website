@@ -1,5 +1,5 @@
 import banner from '../../assets/scrollingBanner.jpg'
-import lambdaPhoto1 from '../../assets/phiReveal.webp'
+import lambdaPhoto1 from '../../assets/chiReveal.webp'
 import lambdaPhoto2 from '../../assets/lambdaPhoto2.webp'
 import backgroundTexture from '../../assets/backgroundtexture.webp'
 import contactUsTexture from '../../assets/contactUsTexture.webp'

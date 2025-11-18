@@ -4,7 +4,6 @@ import dragon from "../../assets/dragon.webp";
 
 import AlexRoster from "../../assets/brothers/active/AlexRoster.jpg";
 import AllanRoster from "../../assets/brothers/active/AllanRoster.jpg";
-import AndyRoster from "../../assets/brothers/active/AndyRoster.jpg";
 import CooperRoster from "../../assets/brothers/active/CooperRoster.jpg";
 import DylanRoster from "../../assets/brothers/active/DylanRoster.jpg";
 import JamesRoster from "../../assets/brothers/active/JamesRoster.jpg";
@@ -19,6 +18,14 @@ import NathanRoster from "../../assets/brothers/active/NathanRoster.jpg";
 import StevenRoster from "../../assets/brothers/active/StevenRoster.jpg";
 import TianyiRoster from "../../assets/brothers/active/TianyiRoster.jpg";
 import YuanyaoRoster from "../../assets/brothers/active/YuanyaoRoster.jpg";
+import KhangRoster from "../../assets/brothers/active/KhangRoster.jpeg"
+import WillRoster from "../../assets/brothers/active/WillRoster.jpg";
+import BrianRoster from "../../assets/brothers/active/BrianRoster.jpeg";
+import CharlieRoster from "../../assets/brothers/active/CharlieRoster.jpeg";
+import ChesterRoster from "../../assets/brothers/active/ChesterRoster.jpeg";
+import EdwinRoster from "../../assets/brothers/active/EdwinRoster.jpeg";
+import LanceRoster from "../../assets/brothers/active/LanceRoster.jpeg";
+import NickRoster from "../../assets/brothers/active/NickRoster.jpeg";
 
 
 
@@ -79,14 +86,6 @@ function Active() {
             role: "Professional Development",
             contact: "jerryzha@unc.edu",
             year: "2027",
-        },
-        {
-            image: AndyRoster,
-            lineNumber: "#111",
-            name: "Andy “BRACKLIST” Choe",
-            role: "Scribe",
-            contact: "N/A",
-            year: "2026",
         },
         {
             image: KenRoster,
@@ -160,14 +159,71 @@ function Active() {
             contact: "yuanyaol@unc.edu",
             year: "2026",
         },
-        // {
-        //     image: noPhoto,
-        //     lineNumber: "#123",
-        //     name: "Khang “Lucky Twice” Nguyen",
-        //     role: "",
-        //     contact: "idk@unc.edu",
-        //     year: "2026",
-        // },
+        {
+            image: KhangRoster,
+            lineNumber: "#123",
+            name: "Khang “Lucky Twice” Nguyen",
+            role: "",
+            contact: "idk@unc.edu",
+            year: "2026",
+        },
+        {
+            image: WillRoster,
+            lineNumber: "#124",
+            name: "Will “The Unbr⊕ken Vanguard” Hymas",
+            role: "New Member",
+            contact: "whymas@unc.edu",
+            year: "2028",
+        },
+        {
+            image: LanceRoster,
+            lineNumber: "#125",
+            name: "Lance “Skyfall” Santarina",
+            role: "New Member",
+            contact: "lgs@ad.unc.edu",
+            year: "2029",
+        },
+        {
+            image: NickRoster,
+            lineNumber: "#126",
+            name: "Nicholas “DawnBreakHer” Win",
+            role: "New Member",
+            contact: "nicwin@unc.edu",
+            year: "2029",
+        },
+        {
+            image: ChesterRoster,
+            lineNumber: "#127",
+            name: "Chester Chan-Hyun “SAINt LAURENt” Park",
+            role: "Neo",
+            contact: "chextrey@unc.edu",
+            year: "2029",
+        },
+        {
+            image: CharlieRoster,
+            lineNumber: "#128",
+            name: "Charlie “Siegfried” Nguyen",
+            role: "New Member",
+            contact: "chath@unc.edu",
+            year: "2028",
+        },
+        {
+            image: EdwinRoster,
+            lineNumber: "#129",
+            name: "Edwin “Pochita” Cho",
+            role: "New Member",
+            contact: "edccho@unc.edu",
+            year: "2029",
+        },
+        {
+            image: BrianRoster,
+            lineNumber: "#130",
+            name: "Brian “Brack Tzar” Fan",
+            role: "New Member",
+            contact: "Brianfan@kenan-flagler.unc.edu",
+            year: "2029",
+        },
+
     ];
 
 

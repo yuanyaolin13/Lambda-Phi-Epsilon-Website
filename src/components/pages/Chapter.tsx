@@ -280,7 +280,6 @@ function Chapter() {
                 '#108. Tianyi "The Alchemist π\'Tranced" Zhou',
                 '#109. Nathan "rEnTgoKu" Luu',
                 '#110. Jerry "Gladiator" Zhang',
-                '#111. Andy "BRACKLIST" Choe',
                 '#112. Caleb "BRACKPINK" Green'
             ]
         },
@@ -321,6 +320,24 @@ function Chapter() {
                 '#120. Jonathan "1MP3RIOSO" Gregory',
                 '#121. Steven "Ad Astra" Chen',
                 '#122. Yuanyao "Entei" Lin',
+                '#123. Khang "Lucky Twice" Nguyen'
+            ]
+        },
+        {
+            semesterYear: "Fall 2025",
+            className: "Chi Conquerors",
+            educators: [
+                'Dylan "HowL" Chin',
+                'Nathan "rEnTgoKu" Luu',
+            ],
+            classMembers: [
+                '#124. Will "The Unbr⊕ken Vanguard" Hymas',
+                '#125. Lance "Skyfall" Santarina',
+                '#126. Nicholas "DawnBreakHer" Win',
+                '#127. Chester Chan-Hyun "SAINt LAURENt" Park',
+                '#128. Charlie "Siegfried" Nguyen',
+                '#129. Edwin "Pochita" Cho',
+                '#130. Brian "Brack Tzar" Fan'
             ]
         }
     ]
