@@ -1,6 +1,7 @@
 import dragon from "../../assets/dragon.webp";
 import banner from "../../assets/scrollingBanner.jpg";
 import ChapterRosterItem from "../util/ChapterRosterItem.tsx";
+import {useEffect, useRef, useState} from "react";
 
 
 function Chapter() {
@@ -342,6 +343,39 @@ function Chapter() {
         }
     ]
 
+    function useIsVisible(ref: any) {
+        const [hasAnimated, setHasAnimated] = useState(false);
+
+        useEffect(() => {
+            if (hasAnimated) {
+                return;
+            }
+            const observer = new IntersectionObserver(([entry]) => {
+                    if (entry.isIntersecting) {
+                        setHasAnimated(true);
+                        observer.disconnect();
+                    }
+                }
+            );
+
+            observer.observe(ref.current);
+            return () => {
+                observer.disconnect();
+            };
+        }, [ref, hasAnimated]);
+
+        return hasAnimated;
+    }
+
+    const ref1 = useRef(null);
+    const isVisible1 = useIsVisible(ref1);
+
+    const ref2 = useRef(null);
+    const isVisible2 = useIsVisible(ref2);
+
+    const ref3 = useRef(null);
+    const isVisible3 = useIsVisible(ref3);
+
     return (
         <div className="w-full flex flex-col overflow-hidden">
             <article className="bg-[url(./assets/smoke2.png)] h-full bg-cover bg-center bg-no-repeat">
@@ -400,22 +434,28 @@ function Chapter() {
                         wisdom.
                     </div>
                     <div className='flex-col space-y-4 lg:space-y-0 lg:flex-row justify-between lg:mx-24 hidden md:flex'>
-                        <div className="tabular-nums  text-blue-700 lg:text-7xl text-3xl font-bold animate-[dollarsRaisedCounter_3s_ease-out_forwards] [counter-set:_num_var(--num)] before:content-[counter(num)]">
-                            <span className='sr-only'>$2,000</span><span className='not-sr-only'>$+</span>
+                        <div ref={ref1} className={`tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold
+                        ${isVisible1 ? "animate-[dollarsRaisedCounter_3s_ease-out_forwards] [counter-set:_num_var(--num)] before:content-[counter(num)] opacity-100" : "opacity-0"}
+                        `}>
+                            <span className='sr-only'>$8,000</span><span className='not-sr-only'>$+</span>
                             <div className='text-sm lg:text-xl text-black w-full'>raised for other orgs.</div>
                         </div>
-                        <div className="tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold animate-[brothersCounter_3s_ease-out_forwards] [counter-set:_num_var(--num)] before:content-[counter(num)]">
+                        <div ref={ref2} className={`tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold
+                        ${isVisible2 ? "animate-[brothersCounter_3s_ease-out_forwards] [counter-set:_num_var(--num)] before:content-[counter(num)] opacity-100" : "opacity-0"}
+                        `}>
                             <span className='sr-only '>10,000</span><span className='not-sr-only'>K+</span>
                             <div className='text-sm lg:text-xl text-black w-full'>brothers world-wide</div>
                         </div>
-                        <div className="tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold animate-[chapterCounter_3s_ease-out_forwards] [counter-set:_num_var(--num)] before:content-[counter(num)]">
+                        <div ref={ref3} className={`tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold
+                        ${isVisible3 ? "animate-[chapterCounter_3s_ease-out_forwards] [counter-set:_num_var(--num)] before:content-[counter(num)] opacity-100" : "opacity-0"}
+                        `}>
                             <span className='sr-only'>100+</span><span className='not-sr-only'>+</span>
                             <div className='text-sm lg:text-xl text-black w-full'>brothers part of the chapter</div>
                         </div>
                     </div>
                     <div className='flex-col space-y-4 lg:space-y-0 lg:flex-row justify-between lg:mx-24 flex md:hidden'>
                         <div className="tabular-nums  text-blue-700 lg:text-7xl text-3xl font-bold">
-                            <span>$2,000+</span>
+                            <span>$8,000+</span>
                             <div className='text-sm lg:text-xl text-black w-full'>raised for other orgs.</div>
                         </div>
                         <div className="tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold">
