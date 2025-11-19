@@ -232,7 +232,7 @@ function Active() {
         <div className="w-full flex flex-col">
             <article className="bg-[url(./assets/smoke2.png)] h-full bg-cover bg-center bg-no-repeat">
                 <div className="h-screen bg-black/75 backdrop-blur-sm text-white flex flex-col justify-center relative">
-                    <div className='mt-auto px-4 mx-6 border-l-8 flex flex-col'>
+                    <div className='mt-auto px-4 mx-6 flex flex-col'>
                         <div className="text-center lg:text-left text-5xl lg:text-[9rem] font-extrabold">
                             ACTIVE HOUSE
                         </div>

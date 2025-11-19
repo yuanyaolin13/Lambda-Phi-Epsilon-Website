@@ -10,7 +10,7 @@ function Home() {
         <div className="w-full flex flex-col">
             <article className="bg-[url(./assets/smoke2.png)] h-screen bg-cover bg-center bg-no-repeat">
                 <div className="h-full w-full bg-black/75 backdrop-blur-sm text-white flex flex-col justify-center">
-                    <div className="text-center lg:text-left lg:text-lg italic mt-64 lg:mt-48 lg:ml-8 tracking-tight">
+                    <div className="text-center lg:text-left lg:text-lg italic mt-64 lg:mt-56 lg:ml-8 tracking-tight">
                         The University of North Carolina at Chapel Hill
                     </div>
                     <div className="text-center lg:text-left text-6xl lg:text-[12rem] font-extrabold italic tracking-tighter">
