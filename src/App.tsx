@@ -8,10 +8,10 @@ import ScrollToTopButton from "./components/ScrollToTopButton.tsx";
 function App() {
   return (
     <>
-        <NavBar />
-        <ScrollToTopButton/>
-        <Hero />
-        <Footer />
+      <NavBar/>
+      <ScrollToTopButton/>
+      <Hero/>
+      <Footer/>
     </>
   );
 }
