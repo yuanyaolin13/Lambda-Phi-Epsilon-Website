@@ -4,6 +4,8 @@ Welcome to the GitHub repository for UNC Lambda Phi Epsilon's official website! 
 
 This repository is a revamp of our [old website](https://github.com/yuanyaolin13/unclambdasweb), converting outdated HTML/CSS into a modern React/TailwindCSS app.
 
+If you are the current webmaster and would like to check on our host, CloudFlare, or renew the domain, please log in to CloudFlare on the Lambda Phi Epsilon Gmail!
+
 ## Getting Started
 
 ### Initial Setup:
