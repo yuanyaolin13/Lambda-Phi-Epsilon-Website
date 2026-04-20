@@ -3,50 +3,58 @@ import lambdaPhoto1 from '../../assets/chiReveal.webp'
 import lambdaPhoto2 from '../../assets/lambdaPhoto2.webp'
 import backgroundTexture from '../../assets/backgroundtexture.webp'
 import contactUsTexture from '../../assets/contactUsTexture.webp'
-import dragon from "../../assets/dragon.webp";
+import lambdaLogo from '../../assets/lambdalogo.png'
+
+import {useScrollFadeIn} from "../hooks/useScrollFadeIn.ts";
+import {useState} from "react";
 
 function Home() {
+  const { ref, visible } = useScrollFadeIn();
+  const [bannerLoaded, setBannerLoaded] = useState(false);
+
   return (
     <div className="w-full flex flex-col">
-      <article className="bg-[url(./assets/smoke2.png)] h-screen bg-cover bg-center bg-no-repeat">
+      <article className="bg-[url(./assets/smoke2.png)] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col">
         <div
-          className="h-full w-full bg-black/75 backdrop-blur-sm text-white flex flex-col justify-center">
-          <div
-            className="text-center lg:text-left lg:text-lg italic mt-64 lg:mt-56 lg:ml-8 tracking-tight">
-            The University of North Carolina at Chapel Hill
-          </div>
-          <div
-            className="text-center lg:text-left text-6xl lg:text-[12rem] font-extrabold italic tracking-tighter">
-            LAMBDA PHI
-          </div>
-          <div
-            className="text-center lg:text-right text-6xl lg:text-[12rem] -mt-3 font-extrabold italic lg:ml-auto lg:-mt-12 tracking-tighter">
-            EPSILON
-          </div>
-          <div className='ml-auto lg:-mt-8 mr-6 -mt-2 mb-66 lg:mb-50'>est. 2013</div>
-
-          <div className="w-full overflow-hidden mt-auto bg-white p-2">
-            <img
-              src={dragon}
-              alt={'dragon'}
-              className="absolute top-32 lg:top-20 right-0 h-128 lg:h-196 -z-20 opacity-25"
-            />
-            <ul className="flex w-max animate-infinite-scroll">
-              {[...Array(6)].map((_, i) => (
-                <li key={i} className="">
-                  <img
-                    src={banner}
-                    alt={`banner ${i}`}
-                    className="h-16 w-auto"
-                    loading="eager"
-                  />
-                </li>
-              ))}
-            </ul>
+          className="flex-1 flex flex-row items-center bg-black/75 backdrop-blur-sm text-white relative overflow-hidden">
+          <div className="flex flex-col sm:flex-row justify-center m-2 w-full">
+            <div ref={ref} className={`fade-up ${visible ? "visible" : ""} flex flex-col w-full align-middle justify-center`}>
+              <div className='text-6xl sm:text-8xl tracking-tighter font-bold not-italic sm:italic'>
+                LAMBDA PHI EPSILON
+              </div>
+              <div className='text-xl font-bold'>
+                The Associate Chapter at UNC Chapel Hill
+              </div>
+              <div className="italic tracking-tighter opacity-50">
+                est. 2013
+              </div>
+            </div>
+            <div ref={ref} className={`fade-up ${visible ? "visible" : ""} flex w-full`}
+                 style={{transitionDelay: "150ms"}}>
+              <img
+                src={lambdaLogo}
+                alt={"lambda logo"}
+                className='hidden sm:block md:w-128 md:h-128 mx-auto border-white'
+              />
+            </div>
           </div>
         </div>
+        <div className="w-full overflow-hidden bg-white p-2">
+          <ul className={`flex w-max ${bannerLoaded ? 'animate-infinite-scroll' : ''}`}>
+          {[...Array(3)].map((_, i) => (
+              <li key={i}>
+                <img
+                  src={banner}
+                  alt={`banner ${i}`}
+                  className="h-16 w-auto"
+                  onLoad={() => setBannerLoaded(true)}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </article>
-      <article className="relative w-full h-full flex bg-white">
+      <article className="relative w-full flex bg-white">
         <div
           className="flex flex-col lg:flex-row lg:items-start m-6 lg:mx-12 w-full justify-center bg-[url(./assets/whoarewebackgroundtexture.webp)] bg-contain">
           <div

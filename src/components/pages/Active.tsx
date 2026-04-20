@@ -1,6 +1,4 @@
 import ActiveHouseItem from "../util/ActiveHouseItem";
-import banner from "../../assets/scrollingBanner.jpg";
-import dragon from "../../assets/dragon.webp";
 
 import AlexRoster from "../../assets/brothers/active/AlexRoster.jpg";
 import AllanRoster from "../../assets/brothers/active/AllanRoster.jpg";
@@ -26,6 +24,7 @@ import ChesterRoster from "../../assets/brothers/active/ChesterRoster.jpeg";
 import EdwinRoster from "../../assets/brothers/active/EdwinRoster.jpeg";
 import LanceRoster from "../../assets/brothers/active/LanceRoster.jpeg";
 import NickRoster from "../../assets/brothers/active/NickRoster.jpeg";
+import Landing from "../Landing.tsx";
 
 
 function Active() {
@@ -228,39 +227,7 @@ function Active() {
 
   return (
     <div className="w-full flex flex-col">
-      <article className="bg-[url(./assets/smoke2.png)] h-full bg-cover bg-center bg-no-repeat">
-        <div
-          className="h-screen bg-black/75 backdrop-blur-sm text-white flex flex-col justify-center relative">
-          <div className='mt-auto px-4 mx-6 flex flex-col'>
-            <div className="text-center lg:text-left text-5xl lg:text-[9rem] font-extrabold">
-              ACTIVE HOUSE
-            </div>
-            <div className="text-center lg:text-left text-3xl lg:text-6xl font-extrabold lg:-mt-2">
-              LAMBDA PHI EPSILON
-            </div>
-          </div>
-          <div className="w-full overflow-hidden mt-auto bg-white p-2">
-            <img
-              src={dragon}
-              alt={'dragon'}
-              className="absolute top-32 lg:top-20 right-0 h-128 lg:h-196 -z-20 opacity-25"
-            />
-            <ul className="flex w-max animate-infinite-scroll">
-              {[...Array(6)].map((_, i) => (
-                <li key={i} className="">
-                  <img
-                    src={banner}
-                    alt={`banner ${i}`}
-                    className="h-16 w-auto"
-                    loading="eager"
-                  />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </article>
-
+      <Landing PageName="ACTIVE HOUSE"/>
       <article className="relative bg-[url(./assets/graintexture.webp)] bg-fixed bg-bottom">
         <svg viewBox="0 0 1440 350" fill="none" xmlns="http://www.w3.org/2000/svg"
              className="block -mt-1 -rotate-180">
