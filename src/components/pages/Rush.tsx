@@ -60,7 +60,7 @@ function Rush() {
 
   return (
     <div className="w-full flex flex-col">
-      <Landing PageName="RUSH" />
+      <Landing PageName="RUSH"/>
       {/* PLEASE UPDATE THIS WHEN WE DO NOT HAVE CHOPPED RUSH GRAPHICS!!!!!!!! */}
       {/*<article className="bg-[url(./assets/graintexture.webp)]">*/}
       {/*  <svg viewBox="0 0 1440 223"*/}

@@ -2,7 +2,7 @@ import banner from "../assets/scrollingBanner.jpg";
 import {useState} from "react";
 import {useScrollFadeIn} from "./hooks/useScrollFadeIn.ts";
 
-function Landing({ PageName } : {PageName : string}) {
+function Landing({PageName}: { PageName: string }) {
   const [bannerLoaded, setBannerLoaded] = useState(false);
   const {ref, visible} = useScrollFadeIn();
 
