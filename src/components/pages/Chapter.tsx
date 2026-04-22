@@ -320,7 +320,7 @@ function Chapter() {
         '#120. Jonathan "1MP3RIOSO" Gregory',
         '#121. Steven "Ad Astra" Chen',
         '#122. Yuanyao "Entei" Lin',
-        '#123. Khang "Lucky Twice" Nguyen'
+        // '#123. Khang "Lucky Twice" Nguyen'
       ]
     },
     {

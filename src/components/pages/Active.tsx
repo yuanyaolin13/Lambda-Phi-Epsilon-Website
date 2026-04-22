@@ -16,7 +16,7 @@ import NathanRoster from "../../assets/brothers/active/NathanRoster.jpg";
 import StevenRoster from "../../assets/brothers/active/StevenRoster.jpg";
 import TianyiRoster from "../../assets/brothers/active/TianyiRoster.jpg";
 import YuanyaoRoster from "../../assets/brothers/active/YuanyaoRoster.jpg";
-import KhangRoster from "../../assets/brothers/active/KhangRoster.jpeg"
+// import KhangRoster from "../../assets/brothers/active/KhangRoster.jpeg"
 import WillRoster from "../../assets/brothers/active/WillRoster.png";
 import BrianRoster from "../../assets/brothers/active/BrianRoster.jpeg";
 import CharlieRoster from "../../assets/brothers/active/CharlieRoster.jpeg";
@@ -157,14 +157,14 @@ function Active() {
       contact: "yuanyaol@unc.edu",
       year: "2026",
     },
-    {
-      image: KhangRoster,
-      lineNumber: "#123",
-      name: "Khang “Lucky Twice” Nguyen",
-      role: "New Member",
-      contact: "khangn@unc.edu",
-      year: "2026",
-    },
+    // {
+    //   image: KhangRoster,
+    //   lineNumber: "#123",
+    //   name: "Khang “Lucky Twice” Nguyen",
+    //   role: "New Member",
+    //   contact: "khangn@unc.edu",
+    //   year: "2026",
+    // },
     {
       image: WillRoster,
       lineNumber: "#124",
