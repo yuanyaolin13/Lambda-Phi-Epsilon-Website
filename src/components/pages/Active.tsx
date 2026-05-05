@@ -2,21 +2,14 @@ import ActiveHouseItem from "../util/ActiveHouseItem";
 
 import AlexRoster from "../../assets/brothers/active/AlexRoster.jpg";
 import AllanRoster from "../../assets/brothers/active/AllanRoster.jpg";
-import CooperRoster from "../../assets/brothers/active/CooperRoster.jpg";
 import DylanRoster from "../../assets/brothers/active/DylanRoster.jpg";
 import JamesRoster from "../../assets/brothers/active/JamesRoster.jpg";
 import JerryRoster from "../../assets/brothers/active/JerryRoster.jpg";
-import JohnnyRoster from "../../assets/brothers/active/JohnnyRoster.jpg";
-import JohnRoster from "../../assets/brothers/active/JohnRoster.jpg";
 import JonathanRoster from "../../assets/brothers/active/JonathanRoster.jpg";
 import KenRoster from "../../assets/brothers/active/KenRoster.jpg";
-import KylerRoster from "../../assets/brothers/active/KylerRoster.jpg";
-import LorenzoRoster from "../../assets/brothers/active/LorenzoRoster.jpg";
 import NathanRoster from "../../assets/brothers/active/NathanRoster.jpg";
 import StevenRoster from "../../assets/brothers/active/StevenRoster.jpg";
 import TianyiRoster from "../../assets/brothers/active/TianyiRoster.jpg";
-import YuanyaoRoster from "../../assets/brothers/active/YuanyaoRoster.jpg";
-// import KhangRoster from "../../assets/brothers/active/KhangRoster.jpeg"
 import WillRoster from "../../assets/brothers/active/WillRoster.png";
 import BrianRoster from "../../assets/brothers/active/BrianRoster.jpeg";
 import CharlieRoster from "../../assets/brothers/active/CharlieRoster.jpeg";
@@ -24,48 +17,18 @@ import ChesterRoster from "../../assets/brothers/active/ChesterRoster.jpeg";
 import EdwinRoster from "../../assets/brothers/active/EdwinRoster.jpeg";
 import LanceRoster from "../../assets/brothers/active/LanceRoster.jpeg";
 import NickRoster from "../../assets/brothers/active/NickRoster.jpeg";
+import NoahRoster from "../../assets/brothers/active/NoahRoster.jpeg";
+import DennisRoster from "../../assets/brothers/active/DennisRoster.jpeg";
 import Landing from "../Landing.tsx";
 
 
 function Active() {
   const activeHouse = [
     {
-      image: KylerRoster,
-      lineNumber: "#97",
-      name: "Kyler “The 《Lord A.R.C.H.E.R.》” Chen",
-      role: "External Events",
-      contact: "kylerc@unc.edu",
-      year: "2026",
-    },
-    {
-      image: JohnRoster,
-      lineNumber: "#102",
-      name: "John “Whiplash” Dinh",
-      role: "Associates",
-      contact: "dinhj@unc.edu",
-      year: "2026",
-    },
-    {
-      image: LorenzoRoster,
-      lineNumber: "#105",
-      name: "Lorenzo “SeiTa” Santarina IV",
-      role: "Rush, Fundraising, Reveal Coordinator",
-      contact: "lnsiv@unc.edu",
-      year: "2026",
-    },
-    {
-      image: CooperRoster,
-      lineNumber: "#107",
-      name: "Cooper “Dante” Klein",
-      role: "Associate",
-      contact: "ckle@unc.edu",
-      year: "2026",
-    },
-    {
       image: TianyiRoster,
       lineNumber: "#108",
       name: "Tianyi “The Alchemist π‘Tranced” Zhou",
-      role: "President",
+      role: "Inactive",
       contact: "tianyiz@unc.edu",
       year: "2027",
     },
@@ -73,7 +36,7 @@ function Active() {
       image: NathanRoster,
       lineNumber: "#109",
       name: "Nathan “rEnTgoKu” Luu",
-      role: "Internal Events",
+      role: "Alumni Connections",
       contact: "nluu@unc.edu",
       year: "2027",
     },
@@ -81,7 +44,7 @@ function Active() {
       image: JerryRoster,
       lineNumber: "#110",
       name: "Jerry “Gladiator” Zhang",
-      role: "Professional Development",
+      role: "Inactive",
       contact: "jerryzha@unc.edu",
       year: "2027",
     },
@@ -89,7 +52,7 @@ function Active() {
       image: KenRoster,
       lineNumber: "#113",
       name: "Ken “ExcalibHer” Pham",
-      role: "Rush, VPI",
+      role: "Rush Chair",
       contact: "kpham7@unc.edu",
       year: "2027",
     },
@@ -97,7 +60,7 @@ function Active() {
       image: AllanRoster,
       lineNumber: "#114",
       name: "Allan “Nception” Fan",
-      role: "Treasurer, Secretary",
+      role: "Inactive",
       contact: "afc@unc.edu",
       year: "2027",
     },
@@ -105,7 +68,7 @@ function Active() {
       image: AlexRoster,
       lineNumber: "#116",
       name: "Alex “Graduate” Tang",
-      role: "VPE",
+      role: "Inactive",
       contact: "alextang@unc.edu",
       year: "2027",
     },
@@ -113,7 +76,7 @@ function Active() {
       image: DylanRoster,
       lineNumber: "#117",
       name: "Dylan “HowL” Chin",
-      role: "Judicial",
+      role: "President",
       contact: "dylchin@unc.edu",
       year: "2027",
     },
@@ -121,23 +84,15 @@ function Active() {
       image: JamesRoster,
       lineNumber: "#118",
       name: "James “Anubis” Ma",
-      role: "IGC Representative, Rush Chair",
+      role: "External Events",
       contact: "jyma@unc.edu",
-      year: "2028",
-    },
-    {
-      image: JohnnyRoster,
-      lineNumber: "#119",
-      name: "Johnny “Brack Tiger” Zhu",
-      role: "Rush Chair, External Events",
-      contact: "johnnyz@unc.edu",
       year: "2028",
     },
     {
       image: JonathanRoster,
       lineNumber: "#120",
       name: "Jonathan “1MP3RIOSO” Gregory",
-      role: "Reveal Coordinator, Rush Chair",
+      role: "Stroll Coordinator and IGC Representative",
       contact: "jgre@unc.edu",
       year: "2028",
     },
@@ -145,31 +100,15 @@ function Active() {
       image: StevenRoster,
       lineNumber: "#121",
       name: "Steven “Ad Astra” Chen",
-      role: "Rush Chair, Social Media, Secretary, Cultural Heritage, Events",
+      role: "Vice President External, Internal Events, and Webmaster",
       contact: "loading@unc.edu",
       year: "2028",
     },
     {
-      image: YuanyaoRoster,
-      lineNumber: "#122",
-      name: "Yuanyao “Entei” Lin",
-      role: "Web Chair, Social Media, Cultural Heritage",
-      contact: "yuanyaol@unc.edu",
-      year: "2026",
-    },
-    // {
-    //   image: KhangRoster,
-    //   lineNumber: "#123",
-    //   name: "Khang “Lucky Twice” Nguyen",
-    //   role: "New Member",
-    //   contact: "khangn@unc.edu",
-    //   year: "2026",
-    // },
-    {
       image: WillRoster,
       lineNumber: "#124",
       name: "Will “The Unbr⊕ken Vanguard” Hymas",
-      role: "New Member",
+      role: "Vice President Internal and Rush Chair",
       contact: "whymas@unc.edu",
       year: "2028",
     },
@@ -177,7 +116,7 @@ function Active() {
       image: LanceRoster,
       lineNumber: "#125",
       name: "Lance “Skyfall” Santarina",
-      role: "New Member",
+      role: "Judicial",
       contact: "lgs@ad.unc.edu",
       year: "2029",
     },
@@ -185,7 +124,7 @@ function Active() {
       image: NickRoster,
       lineNumber: "#126",
       name: "Nicholas “DawnBreakHer” Win",
-      role: "New Member",
+      role: "Fundraising",
       contact: "nicwin@unc.edu",
       year: "2029",
     },
@@ -193,7 +132,7 @@ function Active() {
       image: ChesterRoster,
       lineNumber: "#127",
       name: "Chester Chan-Hyun “SAINt LAURENt” Park",
-      role: "Neo",
+      role: "Graphics and Media",
       contact: "chextrey@unc.edu",
       year: "2029",
     },
@@ -201,7 +140,7 @@ function Active() {
       image: CharlieRoster,
       lineNumber: "#128",
       name: "Charlie “Siegfried” Nguyen",
-      role: "New Member",
+      role: "Service Event Coordinator",
       contact: "chath@unc.edu",
       year: "2028",
     },
@@ -209,7 +148,7 @@ function Active() {
       image: EdwinRoster,
       lineNumber: "#129",
       name: "Edwin “Pochita” Cho",
-      role: "New Member",
+      role: "Fundraising and Party/Risk Management",
       contact: "edccho@unc.edu",
       year: "2029",
     },
@@ -217,11 +156,26 @@ function Active() {
       image: BrianRoster,
       lineNumber: "#130",
       name: "Brian “Brack Tzar” Fan",
-      role: "New Member",
+      role: "Party/Risk Management",
       contact: "Brianfan@kenan-flagler.unc.edu",
       year: "2029",
     },
-
+    {
+      image: DennisRoster,
+      lineNumber: "#131",
+      name: "Dennis “Wuxia” Liu",
+      role: "Secretary and IGC Representative",
+      contact: "denniswl@unc.edu",
+      year: "2029",
+    },
+    {
+      image: NoahRoster,
+      lineNumber: "#132",
+      name: "Noah “Sirius” Bianes",
+      role: "Historian",
+      contact: "nbianes@unc.edu",
+      year: "2029",
+    },
   ];
 
 

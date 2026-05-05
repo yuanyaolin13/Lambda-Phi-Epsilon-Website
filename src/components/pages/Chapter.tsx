@@ -340,18 +340,18 @@ function Chapter() {
         '#130. Brian "Brack Tzar" Fan'
       ]
     },
-    // {
-    //   semesterYear: "Spring 2026",
-    //   className: "",
-    //   educators: [
-    //     'Johnathan "Whiplash" Dinh',
-    //     'Lorenzo "SeiTa" Santarina IV',
-    //   ],
-    //   classMembers: [
-    //     '#131. Dennis "" Liu',
-    //     '#132. Noah "" Bianes',
-    //   ]
-    // }
+    {
+      semesterYear: "Spring 2026",
+      className: "Psycho Psi",
+      educators: [
+        'Johnathan "Whiplash" Dinh',
+        'Lorenzo "SeiTa" Santarina IV',
+      ],
+      classMembers: [
+        '#131. Dennis "Wuxia" Liu',
+        '#132. Noah "Sirius" Bianes',
+      ]
+    }
   ]
 
   const [isLoaded, setIsLoaded] = useState(false);
@@ -413,7 +413,7 @@ function Chapter() {
           <div
             className='flex-col space-y-4 lg:space-y-0 lg:flex-row justify-between lg:mx-24 flex md:hidden'>
             <div className="tabular-nums  text-blue-700 lg:text-7xl text-3xl font-bold">
-              <span>$8,000+</span>
+              <span>$10,000+</span>
               <div className='text-sm lg:text-xl text-black w-full'>raised for other orgs.</div>
             </div>
             <div className="tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold">

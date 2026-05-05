@@ -1,5 +1,5 @@
 import banner from '../../assets/scrollingBanner.jpg'
-import lambdaPhoto1 from '../../assets/chiReveal.webp'
+import lambdaPhoto1 from '../../assets/psireveal.jpeg'
 import lambdaPhoto2 from '../../assets/lambdaPhoto2.webp'
 import backgroundTexture from '../../assets/backgroundtexture.webp'
 import contactUsTexture from '../../assets/contactUsTexture.webp'
@@ -155,11 +155,11 @@ function Home() {
           alt={'contact Us texture'}
           className={'absolute bottom-0 opacity-20 z-0 pointer-events-none select-none'}
         />
-        <div className='flex flex-col w-full h-full pt-12 lg:pt-24 lg:h-screen'>
+        <div className='flex flex-col w-full h-full pt-12 lg:pt-36 lg:h-screen'>
           <div className="lg:text-8xl text-5xl font-extrabold text-blue-700 lg:mx-64">
             CONTACT US
           </div>
-          <div className="flex flex-row mx-auto h-full w-fit xl:mx-0 xl:mr-auto  px-4 pt-8">
+          <div className="flex flex-row mx-auto h-full w-fit xl:mx-0 xl:mr-auto px-4 pt-8">
             <div className="flex flex-col my-4 lg:my-auto">
               <div className="text-black text-lg h-fit font-bold lg:mx-12">
                 If you have any questions, please feel free to contact us at: unclambdas@gmail.com
