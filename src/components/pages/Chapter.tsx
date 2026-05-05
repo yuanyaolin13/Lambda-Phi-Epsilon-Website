@@ -398,7 +398,7 @@ function Chapter() {
                         `}
                  onLoad={() => setIsLoaded(true)}>
               <span>K+</span>
-              <div className='text-sm lg:text-xl text-black w-full'>brothers world-wide</div>
+              <div className='text-sm lg:text-xl text-black w-full'>brothers worldwide</div>
             </div>
             <div className={`tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold
                         ${isLoaded ? "" : "animate-[chapterCounter_3s_ease-out_forwards]" +
@@ -418,7 +418,7 @@ function Chapter() {
             </div>
             <div className="tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold">
               <span>10K+</span>
-              <div className='text-sm lg:text-xl text-black w-full'>brothers world-wide</div>
+              <div className='text-sm lg:text-xl text-black w-full'>brothers worldwide</div>
             </div>
             <div className="tabular-nums text-blue-700 lg:text-7xl text-3xl font-bold">
               <span>100+</span>
